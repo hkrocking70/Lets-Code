@@ -20,4 +20,5 @@ def lru(l):
             co[pos]=i+1
         print l[i], frame
 
+#Just for testing
 lru([2,3,2,1,5,2,4,5,3,2,5,2])
