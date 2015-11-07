@@ -1,5 +1,8 @@
 #Least Recently Used
+import time
 def lru(l):
+    start_time = time.time()
+    print len(l)
     frame=[-1]*3
     co=[0]*3
     count=-1
@@ -18,7 +21,8 @@ def lru(l):
                     pos=j
                     break
             co[pos]=i+1
-        print l[i], frame
+    print frame
+    print("--- %s seconds ---" % (time.time() - start_time))
 
 #Just for testing
 lru([2,3,2,1,5,2,4,5,3,2,5,2])
